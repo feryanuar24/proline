@@ -60,38 +60,43 @@ $total_harga_tiket = $harga_tiket + $pajak;
 </head>
 <body style="background-image: url(img/bg.jpg); background-size: 100%;">
 
-<!-- Navbar -->
-<section>
-<nav class="navbar navbar-light ms-5">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      <strong class="text-light">ProLine</strong>
-    </a>
-  </div>
-</nav>
-</section>
+  <!-- Navbar -->
+  <section>
+  <nav class="navbar navbar-light ms-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <strong class="text-light">ProLine</strong>
+      </a>
+    </div>
+  </nav>
+  </section>
+  <!-- Akhir Navbar -->
 
-<!-- Heading -->
-<section class="container my-5" style="padding-left: 45%;">
-  <h1 style="color: #31c490;"><strong>Waktunya jalan-jalan!</strong></h1>
-</section>
+  <!-- Heading -->
+  <section class="container my-5" style="padding-left: 45%;">
+    <h1 style="color: #31c490;">
+      <strong>Waktunya jalan-jalan!</strong>
+    </h1>
+  </section>
+  <!-- Akhir Heading -->
 
-<!-- List -->
-<section class="container rounded py-3" style="padding-left: 45%;">
-<div class="bg-light p-3 rounded">
-<ul class="list-group list-group-flush">
-  <li class="list-group-item"><strong>Tanggal :</strong><?php echo "&nbsp;".$tanggal ?></li>
-  <li class="list-group-item"><strong>Nama Maskapai :</strong><?php echo "&nbsp;".$nama_maskapai ?></li>
-  <li class="list-group-item"><strong>Asal Penerbangan :</strong><?php echo "&nbsp;".$asal ?></li>
-  <li class="list-group-item"><strong>Tujuan Penerbangan :</strong><?php echo "&nbsp;".$tujuan ?></li>
-  <li class="list-group-item"><strong>Harga Tiket :</strong><?php echo " Rp ".number_format($harga_tiket) ?></li>
-  <li class="list-group-item"><strong>Pajak :</strong><?php echo " Rp ".number_format($pajak) ?></li>
-  <li class="list-group-item"><strong>Total Harga Tiket :</strong><?php echo " Rp ".number_format($total_harga_tiket) ?></li>
-</ul>
-</div>
-</section>
+  <!-- List -->
+  <section class="container rounded py-3" style="padding-left: 45%;">
+    <div class="bg-light p-3 rounded">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Tanggal :</strong><?php echo "&nbsp;".$tanggal ?></li>
+        <li class="list-group-item"><strong>Nama Maskapai :</strong><?php echo "&nbsp;".$nama_maskapai ?></li>
+        <li class="list-group-item"><strong>Asal Penerbangan :</strong><?php echo "&nbsp;".$asal ?></li>
+        <li class="list-group-item"><strong>Tujuan Penerbangan :</strong><?php echo "&nbsp;".$tujuan ?></li>
+        <li class="list-group-item"><strong>Harga Tiket :</strong><?php echo " Rp ".number_format($harga_tiket) ?></li>
+        <li class="list-group-item"><strong>Pajak :</strong><?php echo " Rp ".number_format($pajak) ?></li>
+        <li class="list-group-item"><strong>Total Harga Tiket :</strong><?php echo " Rp ".number_format($total_harga_tiket) ?></li>
+      </ul>
+    </div>
+  </section>
+  <!-- Akhir List -->
 
-<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
